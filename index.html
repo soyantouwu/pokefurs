@@ -1,8 +1,26 @@
 <html>
-<head>
-<title>Pokefurs</title>
-</head>
-<body>
-<h1>En construccion</h1>
-</body>
+	<head>
+		<title>Pokefurs</title>
+	</head>
+	<body>
+		<h1>En construccion</h1>
+		<button id="dittoButton">Entrada gratis SAFE 2025</button>
+		<div id="videoContainer" style="display:none">
+			<video id="dittoVideo" width="640" height="360" type="video/mp4" controls autoplay>
+				<source src="/ditto.mp4" type="video/mp4">
+				Tu navegador es muy antiguo :(
+			</video>
+		</div>
+
+		<script>
+			const dittoButton = document.getElementById("dittoButton");
+			const videoContainer = document.getElementById("videoContainer");
+			const video = document.getElementById("dittoVideo");
+
+			dittoButton.addEventListener("click", function() {
+				videoContainer.style.display = "block";
+				video.play();
+			});
+		</script>
+	</body>
 </html>
